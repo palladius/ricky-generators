@@ -1,6 +1,6 @@
-require 'generators/nifty'
+require 'generators/ricky'
 
-module Nifty
+module Ricky
   module Generators
     class LayoutGenerator < Base
       argument :layout_name, :type => :string, :default => 'application', :banner => 'layout_name'

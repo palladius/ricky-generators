@@ -5,7 +5,7 @@ Description:
     simpler.
 
     IMPORTANT: This generator uses the "title" helper method which is generated
-    by the nifty_layout generator. You may want to run that generator first.
+    by the ricky_layout generator. You may want to run that generator first.
 
 Usage:
     If you do not pass any arguments, the model name will default to "user", and
@@ -18,15 +18,15 @@ Usage:
       config.gem "authlogic"
 
 Examples:
-    script/generate nifty_authentication
+    script/generate ricky_authentication
 
         Creates user model, users_controller, and sessions_controller.
 
-    script/generate nifty_authentication account
+    script/generate ricky_authentication account
 
         Creates account model, accounts_controller, and sessions_controller.
 
-    script/generate nifty_authentication Account UserSession
+    script/generate ricky_authentication Account UserSession
 
         Creates account model, accounts_controller, and user_sessions_controller.
 

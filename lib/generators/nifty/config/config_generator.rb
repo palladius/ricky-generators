@@ -1,6 +1,6 @@
-require 'generators/nifty'
+require 'generators/ricky'
 
-module Nifty
+module Ricky
   module Generators
     class ConfigGenerator < Base
       argument :config_name, :type => :string, :default => 'app', :banner => 'config_name'

@@ -1,11 +1,11 @@
-Feature: Nifty Authentication Generator
+Feature: Ricky Authentication Generator
   In order to authenticate users
   As a rails developer
   I want to generate some user authentication
 
   Scenario: Generate default authentication
     Given a new Rails app
-    When I run "rails g nifty:authentication"
+    When I run "rails g ricky:authentication"
     Then I should see the following files
       | app/models/user.rb                          |
       | app/controllers/users_controller.rb         |
@@ -27,14 +27,14 @@ Feature: Nifty Authentication Generator
       | match 'logout' => 'sessions#destroy', :as => :logout |
       | match 'signup' => 'users#new', :as => :signup        |
     And I should see "include Authentication" in file "app/controllers/application_controller.rb"
-    When I run "rails g nifty:layout -f"
+    When I run "rails g ricky:layout -f"
     And I run "rake db:migrate"
     And I add "gem 'mocha', :group => :test" to file "Gemfile"
     Then I should successfully run "rake test"
 
   Scenario: Generate named authentication
     Given a new Rails app
-    When I run "rails g nifty:authentication Account CurrentSession"
+    When I run "rails g ricky:authentication Account CurrentSession"
     Then I should see the following files
       | app/models/account.rb                               |
       | app/controllers/accounts_controller.rb              |
@@ -53,7 +53,7 @@ Feature: Nifty Authentication Generator
       | match 'login' => 'current_sessions#new', :as => :login       |
       | match 'logout' => 'current_sessions#destroy', :as => :logout |
       | match 'signup' => 'accounts#new', :as => :signup             |
-    When I run "rails g nifty:layout -f"
+    When I run "rails g ricky:layout -f"
     And I run "rake db:migrate"
     And I add "gem 'mocha', :group => :test" to file "Gemfile"
     Then I should successfully run "rake test"

@@ -1,6 +1,6 @@
 = Ricky Generators
 
-A collection of useful Rails generator scripts for scaffolding, layout files, authentication, and more. Forked by great Nifty Generators code. See credits. 
+A collection of useful Rails generator scripts for scaffolding, layout files, authentication, and more. Forked by great Nifty Generators code (see credits).
 
 
 == Install

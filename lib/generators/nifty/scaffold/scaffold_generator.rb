@@ -1,8 +1,8 @@
-require 'generators/nifty'
+require 'generators/ricky'
 require 'rails/generators/migration'
 require 'rails/generators/generated_attribute'
 
-module Nifty
+module Ricky
   module Generators
     class ScaffoldGenerator < Base
       include Rails::Generators::Migration

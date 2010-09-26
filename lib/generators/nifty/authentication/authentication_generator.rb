@@ -1,7 +1,7 @@
-require 'generators/nifty'
+require 'generators/ricky'
 require 'rails/generators/migration'
 
-module Nifty
+module Ricky
   module Generators
     class AuthenticationGenerator < Base
       include Rails::Generators::Migration
