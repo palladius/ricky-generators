@@ -1,11 +1,11 @@
-= Nifty Generators
+= Ricky Generators
 
-A collection of useful Rails generator scripts for scaffolding, layout files, authentication, and more.
+A collection of useful Rails generator scripts for scaffolding, layout files, authentication, and more. Forked by great Nifty Generators code. See credits. 
 
 
 == Install
 
-  gem install nifty-generators
+  gem install ricky-generators # TODO
 
 
 == Usage
@@ -14,41 +14,41 @@ Once you install the gem, the generators will be available to all Rails applicat
 
 To run the generator, go to your rails project directory and call it using the script/generate or script/destroy command.
 
-  script/generate nifty_scaffold Recipe name:string index new
+  script/generate ricky_scaffold Recipe name:string index new
 
 
 == Included Generators
 
-* nifty_layout: generates generic layout, stylesheet, and helper files.
-* nifty_scaffold: generates a controller and optional model/migration.
-* nifty_config: generates a config YAML file and loader.
-* nifty_authentication: generates user model with sign up and log in.
+* ricky_layout: generates generic layout, stylesheet, and helper files.
+* ricky_scaffold: generates a controller and optional model/migration.
+* ricky_config: generates a config YAML file and loader.
+* ricky_authentication: generates user model with sign up and log in.
 
 To view the README for each generator, run it with the +help+ option.
 
-  script/generate nifty_layout --help
+  script/generate ricky_layout --help
 
 
 == Rails 3
 
-To use Nifty Generators with Rails 3 you will need to include it in your Gemfile.
+To use Ricky Generators with Rails 3 you will need to include it in your Gemfile.
 
-  gem "nifty-generators"
+  gem "ricky-generators" # TODO
 
 The generators use a colon as the separator instead of an underscore.
 
-  rails g nifty:layout
+  rails g ricky:layout
 
-The Rails 3 support is still in early development, please {report any issues}[http://github.com/ryanb/nifty-generators/issues] you find.
+The Rails 3 support is still in early development, please {report any issues}[http://github.com/ryanb/ricky-generators/issues] you find.
 
 
 == Troubleshooting and FAQs
 
-<b>What is the difference between nifty_scaffold and built-in scaffold?</b>
+<b>What is the difference between ricky_scaffold and built-in scaffold?</b>
 
-One of the primary differences is that nifty_scaffold allows you to choose which controller actions to generate.
+One of the primary differences is that ricky_scaffold allows you to choose which controller actions to generate.
 
-  script/generate nifty_scaffold post name:string index new edit
+  script/generate ricky_scaffold post name:string index new edit
 
 There are a few changes to the generated code as well, such as no XML format by default.
 
@@ -57,7 +57,7 @@ It also offers support for HAML, Shoulda, and RSpec.
 
 <b>I get "undefined method 'title'" error.</b>
 
-Try running nifty_layout, that will generate this helper method. Or you can just change the templates to whatever approach you prefer for setting the title.
+Try running ricky_layout, that will generate this helper method. Or you can just change the templates to whatever approach you prefer for setting the title.
 
 
 <b>I can't set new attributes in my model.</b>
@@ -99,6 +99,14 @@ Also, make sure you're using Rails 2.1 or greater.
 
 == Found a bug?
 
-If you are having a problem with Nifty Generators, first look at the FAQs above. If you still cannot resolve it, please submit an issue here.
+If you are having a problem with Ricky Generators, first look at the FAQs above. If you still cannot resolve it, please submit an issue here.
 
-http://github.com/ryanb/nifty-generators/issues
+http://github.com/ryanb/ricky-generators/issues
+
+
+== Credits
+
+Thanks to Ryan Bates (ryanb) for this excellent code. Im trying to extend it to some extent, and add some icons to make it (if possible) even niftier. 
+
+Original gem/code:
+http://github.com/ryanb/nifty-generators
