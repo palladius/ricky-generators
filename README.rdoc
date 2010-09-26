@@ -39,7 +39,7 @@ The generators use a colon as the separator instead of an underscore.
 
   rails g ricky:layout
 
-The Rails 3 support is still in early development, please {report any issues}[http://github.com/ryanb/ricky-generators/issues] you find.
+The Rails 3 support is still in early development, please {report any issues}[http://github.com/palladius/ricky-generators/issues] you find.
 
 
 == Troubleshooting and FAQs
@@ -101,7 +101,7 @@ Also, make sure you're using Rails 2.1 or greater.
 
 If you are having a problem with Ricky Generators, first look at the FAQs above. If you still cannot resolve it, please submit an issue here.
 
-http://github.com/ryanb/ricky-generators/issues
+http://github.com/palladius/ricky-generators/issues
 
 
 == Credits
